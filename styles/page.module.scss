@@ -1,0 +1,7 @@
+@import "variables";
+@import "mixins";
+
+.main {
+	@include center(column);
+	height: 100vh;
+}

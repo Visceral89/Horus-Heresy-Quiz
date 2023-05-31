@@ -6,10 +6,11 @@ $grey: #e4e4e4;
 $black: #1e1e1e;
 
 // Gradient Colors
+$chaos-black: #010101;
 $violet: #8a2387;
-$red: #e94057;
-$orange: #f27121;
-$grad: linear-gradient(45deg, $violet, $red, $orange);
+$red: #120807;
+$orange: #f24b21;
+$grad: linear-gradient(180deg, $chaos-black, $red);
 
 //Font Sizes
 $h1: 64px;
