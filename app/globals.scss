@@ -1,0 +1,13 @@
+@import "../styles/variables";
+
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	font-size: $p;
+	font-weight: $reg;
+
+	// Colors
+	background-color: $black;
+	color: $white;
+}
