@@ -5,3 +5,10 @@
 	@include center(column);
 	height: 100vh;
 }
+
+.loading {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	z-index: 9999;
+}

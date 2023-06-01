@@ -5,6 +5,7 @@ import styles from "@/styles/page.module.scss";
 import Title from "@/components/Title";
 import supabase from "@/utils/supabaseClient";
 import { useState, useEffect } from "react";
+import Loading from "@/components/Loading";
 
 export default function Home() {
 	// Getting Legions
@@ -37,6 +38,7 @@ export default function Home() {
 	return (
 		<main className={styles.main}>
 			<Title />
+			{loading && <Loading />}
 		</main>
 	);
 }
