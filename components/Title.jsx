@@ -13,7 +13,9 @@ const Title = ({ loading }) => {
 			transition={{
 				delay: 1,
 				duration: 1,
-				scale: { type: "spring", damping: 20, stiffness: 100 },
+				type: "spring",
+				damping: 20,
+				stiffness: 100,
 			}}
 		>
 			<Image
