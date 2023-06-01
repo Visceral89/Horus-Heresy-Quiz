@@ -10,7 +10,11 @@ const Title = ({ loading }) => {
 			className={styles.container}
 			initial={{ scale: 1 }}
 			animate={{ scale: loading ? 1 : 0.5, originY: -2 }}
-			transition={{ delay: 1, duration: 0.5 }}
+			transition={{
+				delay: 1,
+				duration: 1,
+				scale: { type: "spring", damping: 20, stiffness: 100 },
+			}}
 		>
 			<Image
 				src="/hhlogo.png"
