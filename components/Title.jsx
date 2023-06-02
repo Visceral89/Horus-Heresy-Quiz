@@ -9,7 +9,7 @@ const Title = ({ loading }) => {
 		<motion.div
 			className={styles.container}
 			initial={{ scale: 1 }}
-			animate={{ scale: loading ? 1 : 0.5, originY: -2 }}
+			animate={{ scale: loading ? 1 : 0.5, originY: -1.5 }}
 			transition={{
 				delay: 1,
 				duration: 1,
