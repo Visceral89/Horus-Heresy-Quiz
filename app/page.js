@@ -3,6 +3,7 @@
 import Image from "next/image";
 import styles from "@/styles/page.module.scss";
 import Title from "@/components/Title";
+import Game from "@/components/Game";
 import supabase from "@/utils/supabaseClient";
 import { useState, useEffect } from "react";
 
@@ -12,6 +13,9 @@ export default function Home() {
 
 	// Loading State
 	const [loading, setLoading] = useState(true);
+
+	// Game State
+	const [game, SetGame] = useState(false);
 
 	useEffect(() => {
 		const fetchLegions = async () => {
@@ -27,6 +31,7 @@ export default function Home() {
 			} finally {
 				setTimeout(() => {
 					setLoading(false);
+					SetGame(true);
 				}, 2000);
 			}
 		};
@@ -39,6 +44,7 @@ export default function Home() {
 	return (
 		<main className={styles.main}>
 			<Title />
+			{game && <Game /> /*Game Component*/}
 		</main>
 	);
 }
