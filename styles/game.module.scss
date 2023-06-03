@@ -1,8 +1,9 @@
 @import "variables";
 @import "mixins";
 
-.main {
+.game {
+	width: 500px;
+	height: 400px;
+	background-color: $white;
 	@include center(column);
-	height: 100vh;
-	width: 100vw;
 }
