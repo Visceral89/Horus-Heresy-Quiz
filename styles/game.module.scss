@@ -3,7 +3,8 @@
 
 .game {
 	width: 500px;
-	height: 400px;
+	height: 500px;
 	background-color: $white;
 	@include center(column);
+	border-radius: $bord/2;
 }
