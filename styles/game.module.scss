@@ -7,4 +7,11 @@
 	background-color: $white;
 	@include center(column);
 	border-radius: $bord/2;
+	background-color: $black;
+}
+
+.welcome {
+	@include center(column);
+	width: 90%;
+	text-align: center;
 }
