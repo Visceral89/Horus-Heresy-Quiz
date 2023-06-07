@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import styles from "@/styles/game.module.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import supabase from "@/utils/supabaseClient";
 
 const Game = () => {
@@ -48,7 +48,7 @@ const Game = () => {
 					<button onClick={startQuiz}>Start Quiz</button>
 				</div>
 			) : (
-				<div>First Question</div>
+				<div>{questions[currentQuestionIndex]?.question}</div>
 			)}
 		</motion.div>
 	);
